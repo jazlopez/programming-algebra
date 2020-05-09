@@ -1,4 +1,4 @@
-from src.linear import get_varname_from, rslv_linear_equation
+from src.resolve_linear_equation import find_equation_variable_name, resolve_linear_equation
 import os
 import colorama
 
@@ -19,9 +19,9 @@ while True:
 
     equality = input(colorama.Fore.YELLOW + " > ").replace(" ", "")
 
-    o_variable_name = get_varname_from(equality)
+    o_variable_name = find_equation_variable_name(equality)
 
-    result = rslv_linear_equation(equality)
+    result = resolve_linear_equation(equality)
 
     print(colorama.Fore.GREEN + "\t%s = %.2f" % (o_variable_name, result))
 
