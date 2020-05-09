@@ -1,0 +1,21 @@
+# compiled files
+__pycache__/
+
+# coverage files
+htmlcov/
+.coverage
+
+# virtualenv
+.Python
+lib/
+lib64/
+
+# eggs
+eggs/
+.eggs/
+
+# trial temp
+
+test/_trial_temp/
+.DS_Store
+.idea/
