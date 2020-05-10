@@ -40,6 +40,12 @@ class TestResolveLinearEquations(unittest.TestCase):
     def test_exec_012_x_plus_3_equals_minus_3dot5(self):
         self.assertEqual(resolve_linear_equation("x+3=-3.5"), -6.50)
 
+    def test_exec_013_x_divided_by_2_equals_3(self):
+        self.assertEqual(resolve_linear_equation("x/2=3"), 6.00)
+
+    def test_exec_014_x_divided_by_2_equals_5(self):
+        self.assertEqual(resolve_linear_equation("x/2=5"), 10.00)
+
 
 if __name__ == "__main__":
     unittest.main()
