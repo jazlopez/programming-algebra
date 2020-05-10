@@ -1,4 +1,4 @@
-from src.resolve_linear_equation import find_equation_variable_name, resolve_linear_equation
+from src.resolve_linear_equation import find_equation_identity_name, resolve_linear_equation
 import os
 import colorama
 
@@ -19,7 +19,7 @@ while True:
 
     equality = input(colorama.Fore.YELLOW + " > ").replace(" ", "")
 
-    o_variable_name = find_equation_variable_name(equality)
+    o_variable_name = find_equation_identity_name(equality)
 
     result = resolve_linear_equation(equality)
 
