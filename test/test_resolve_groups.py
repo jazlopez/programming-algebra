@@ -10,6 +10,7 @@ class TestResolveGroups(unittest.TestCase):
     def test_resolve_groups(self):
 
         self.assertEqual(resolve_groups("2+3*2"), 8.00)
+        self.assertEqual(resolve_groups("19-10/2"), 14.00)
 
 
 
