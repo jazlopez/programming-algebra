@@ -11,7 +11,7 @@ def tokenize(stmt):
     while i < len(stmt):
         cursor = stmt[i]
 
-        if cursor.isdigit():
+        if cursor.isdigit() or cursor == ".":
             operand_value += cursor
         else:
             operands.append(operand_value)
