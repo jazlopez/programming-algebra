@@ -68,3 +68,10 @@ def resolve_groups(equation):
             pass
 
     return float(o_equation)
+
+
+if __name__ == "__main__":
+    pass
+
+__author__ = "jaziel lopez github.com/jazlopez"
+__version__  = "1.0.0"
